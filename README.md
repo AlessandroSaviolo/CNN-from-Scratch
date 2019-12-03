@@ -1,1 +1,1 @@
-# DeepLearning_0845086_HW2
+# CNN from scratch for MNIST and CIFAR-10 datasets
