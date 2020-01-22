@@ -1,25 +1,23 @@
-# CNN from scratch for MNIST and CIFAR-10 datasets
+# Convolutional Neural Network from Scratch
 
-Implementation of a Convolutional Neural Network from scratch, without using high-level libraries such as Keras.
+This project is part of a series of projects for the course _Deep Learning_ that I attended during my exchange program at National Chiao Tung University (Taiwan). See `task.pdf` for the details of the assignment. See `report.pdf` for the report containing the representation and the analysis of the produced results.
 
-### Project files
+The purpose of this project is to implement a Convolutional Neural Network from scratch for MNIST and CIFAR-10 datasets.
 
-```project/root> python main.py```
+## 1. Dataset
 
-Main file. Set hyper parameters, load dataset, build, train and evaluate CNN model.
+- [MNIST](https://drive.google.com/open?id=1uvnD__FBdhp0m5r_dIsrr5y0XY1kn4WN)
 
-```project/root> python model.py```
+- [CIFAR-10](https://drive.google.com/open?id=1B1YA2a-2AY4VRXFrBxJbD5h6YgJZLNez)
 
-Network class file. Implement the Convolutional Neural Network.
+## 2. Project Structure
 
-```project/root> python layer.py```
+- `main.py` : main file. Set hyper parameters, load dataset, build, train and evaluate CNN model
 
-Layer class file. Implement each layer of the Convolutional Neural Network.
+- `model.py` : network class file. Implement the Convolutional Neural Network
 
-```project/root> python inout.py```
+- `layer.py` : layer class file. Implement each layer of the Convolutional Neural Network
 
-Import dataset, pre process dataset and plot diagnostic curves and weight distribution histograms.
+- `inout.py` : import dataset, pre process dataset and plot diagnostic curves and weight distribution histograms
 
-```project/root> kerasCIFAR.py```
-
-Implement the same model implemented from scratch using Keras. This is usefull to train using GPU computation.
+- `kerasCIFAR.py` : implement the same model implemented from scratch using Keras. This is usefull to train using GPU computation
