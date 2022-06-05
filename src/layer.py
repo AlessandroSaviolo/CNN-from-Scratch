@@ -24,14 +24,15 @@ def leakyReLU_derivative(x, alpha=0.01):
     return alpha if x < 0 else 1
 
 
-def lr_schedule(learning_rate, iteration):
+def lr_schedule(learning_rate, iteration): # updated code , this will fix the error 
     if iteration == 0:
+        return learning_rate
+    if (iteration >= 0) and (iteration <= 10000):
         return learning_rate
     if iteration > 10000:
         return learning_rate * 0.1
     if iteration > 30000:
         return learning_rate * 0.1
-
 
 class Convolutional:                                        # convolution layer using 3x3 filters
 
